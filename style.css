@@ -25,6 +25,9 @@
 .sideNav a img{
     padding: 20px 5px 20px 0px;
 }
+.sideNav a i{
+    margin-right: 20px;
+}
 .playlist{
     padding-top: 20px !important;
 }
@@ -52,11 +55,40 @@
 .card{
     background-color: #181818 !important;
     border: none !important;
+    position: relative;
+    transition: background-color ease 250ms;
+
+}
+
+.card:hover{
+    background-color: #303030 !important;
+    transition: background-color ease 250ms;
 }
 .card-text{
     font-size: 12px !important;
     color: gray;
+    font-weight: 700 !important;
 }
 .focusPart h3{
     margin: 30px 0px;
+}
+.card img{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.iconOverlay{
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: transform ease-in-out 250ms, opacity ease 250ms;
+}
+.card:hover .iconOverlay{
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: transform ease-in-out 250ms, opacity ease 250ms, backfround-color ease 250ms;
+}
+.fa{
+    color: #1ed760;
 }
