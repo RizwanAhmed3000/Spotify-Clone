@@ -106,8 +106,51 @@ body{
     right: 0;
     bottom: 0;
     background-color: #303030;
-    padding: 20px 20px;
+    padding: 10px 20px;
 }
 .horizontalCard:hover{
     background-color: #303030;
+}
+.midPart, .leftPart, .rightPart{
+    width: 50%;
+}
+
+#backBtn, #forwardBtn, #shuffleBtn, #repeatBtn{
+    width: 17px;
+    fill: gray;
+    margin: 0px 15px;
+}
+.lowerProgressBar{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+.lowerProgressBar p{
+    color: #fff;
+    font-size: smaller;
+}
+.lowerProgressBar #starting{
+    position: absolute;
+    left: -10%;
+    top: -9px;
+}
+.progress{
+    background-color: gray !important;
+}
+.progress-bar{
+    background-color: #fff !important;
+}
+#ending{
+    position: absolute;
+    right: -10%;
+    top: -9px;
+}
+#lyrics, #queue, #connection, #volume{
+    width: 15px;
+    fill: gray;
+    margin: 0px 8px;
+}
+.volSlider{
+    height: 3px;
+    
 }
