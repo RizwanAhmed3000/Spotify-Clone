@@ -21,7 +21,7 @@ body{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 0.9rem !important;
-    color: white;
+    color: #b3b3b3;
     font-weight: 700;
     display: block;
 }
@@ -105,7 +105,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #303030;
+    background-color: #222222;
     padding: 10px 20px;
 }
 .horizontalCard:hover{
@@ -117,8 +117,9 @@ body{
 
 #backBtn, #forwardBtn, #shuffleBtn, #repeatBtn{
     width: 17px;
-    fill: gray;
+    fill: #b3b3b3;
     margin: 0px 15px;
+    cursor: pointer;
 }
 .lowerProgressBar{
     width: 100%;
@@ -147,10 +148,26 @@ body{
 }
 #lyrics, #queue, #connection, #volume{
     width: 15px;
-    fill: gray;
+    fill: #b3b3b3;
     margin: 0px 8px;
+    cursor: pointer;
 }
 .volSlider{
     height: 3px;
     
+}
+
+.hover, .hover i, .hover svg{
+    color: #b3b3b3 !important;
+    transition: color ease 250ms, fill ease 250ms;
+    fill: #b3b3b3 !important;
+}
+
+.hover:hover, .hover:hover i, .hover:hover svg{
+    color: #fff !important;
+    fill: #fff !important;
+    transition: color ease 250ms, fill ease 250ms;
+}
+#playBtn, .likeBtn{
+    cursor: pointer;
 }
