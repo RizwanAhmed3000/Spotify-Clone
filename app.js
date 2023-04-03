@@ -6,9 +6,8 @@ const overlay = document.querySelector(".overlay");
 const closeBtn = document.querySelector("#closeBtn");
 console.log(closeBtn);
 const logInForm = document.querySelector(".loginForm");
-let shuffleBtn = document.querySelector('#shuffleBtn');
+var shuffleBtn = document.querySelector('#shuffleBtn').style;
 console.log(shuffleBtn)
-
 
 
 function openLogInForm(){

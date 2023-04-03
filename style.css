@@ -167,7 +167,7 @@ body{
 
 .hover:hover, .hover:hover i, .hover:hover svg{
     color: #fff !important;
-    fill: #fff !important;
+    fill: #1ed760 !important;
     transition: color ease 250ms, fill ease 250ms;
 }
 #playBtn, .likeBtn{
