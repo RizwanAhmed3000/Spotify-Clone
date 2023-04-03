@@ -60,7 +60,9 @@ body{
     border: none !important;
     position: relative;
     transition: background-color ease 250ms;
-
+    margin-right: 20px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .card:hover{
@@ -170,4 +172,12 @@ body{
 }
 #playBtn, .likeBtn{
     cursor: pointer;
+}
+
+.cardContainer{
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.cardContainer::-webkit-scrollbar{
+    display: none;
 }
