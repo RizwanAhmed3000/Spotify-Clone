@@ -195,12 +195,12 @@ body{
 }
 .loginForm{
     position: fixed;
-    top: 10%;
+    top: 1%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
     z-index: 2000;
-    width: 40%;
+    width: 30%;
     padding: 20px;
     background-color: #fff;
 }
@@ -215,6 +215,10 @@ body{
     padding: 15px 0px;
     margin-bottom: 10px;
 }
+#forgotPass:hover a, #createAccount:hover a{
+    color: #1ed760 !important;
+}
+
 .hidden{
     display: none;
 }
