@@ -222,3 +222,68 @@ body{
 .hidden{
     display: none;
 }
+
+
+/* normalScreen */
+
+@media(max-width: 1024px) {
+    .lowerProgressBar #starting{
+        left: -14%;
+    }
+    #ending{
+        right: -14%;
+    }
+    .loginForm{
+        width: 42%;
+    }
+    .sideNav{
+        width: 233px;
+    }
+    .mainBox{
+        margin-left: 233px;
+    }
+}
+
+/* Tablet */
+
+@media(min-width: 501px) and (max-width: 768px) {
+    .sideNav{
+        width: 195px;
+    }
+    .mainBox{
+        margin-left: 195px;
+    }
+    .loginForm{
+        width: 60%;
+    }
+    .lang{
+        width: 50% !important;
+    }
+    .volSlider{
+        display: none;
+    }
+    .likeBtn{
+        right: 0% !important;
+    }
+    .midPart{
+        margin-left: 40px;
+    }
+    .lowerProgressBar #starting{
+        left: -20%;
+    }
+    #ending{
+        right: -20%;
+    }
+
+}
+
+/* smartphone */
+
+@media(min-width: 320px) and (max-width: 500px) {
+    .rightPart, .leftPart, .midPart{
+        display: none !important;
+    }
+    /* #lyrics, #queue, #connection, #volume, .volSlider{
+        display: none;
+    } */
+}
