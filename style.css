@@ -15,6 +15,8 @@ body{
     left: 0;
     background-color: #000000;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     /* padding-top: 20px; */
 }
 .sideNav a{
@@ -109,6 +111,7 @@ body{
     bottom: 0;
     background-color: #222222;
     padding: 10px 20px;
+    display: flex;
 }
 .horizontalCard:hover{
     background-color: #303030;
@@ -223,6 +226,80 @@ body{
     display: none;
 }
 
+.icon{
+    padding: 10px;
+    font-size: 30px;
+    position: fixed;
+    left: 0;
+    display: none;
+    color: #fff;
+    z-index: 20000;
+}
+.fa-bars{
+    cursor: pointer;
+}
+.navContainer{
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    z-index: 20000;
+    transform: translateX(0%);
+    transition: transform ease-in-out 250ms;
+    display: none;
+}
+.list ul li a{
+    text-decoration: none;
+    color: white;
+}
+.list ul{
+    padding: 0 !important;
+}
+.list ul li{
+    padding: 5px;
+    font-size: 0.9rem !important;
+    list-style: none;
+}
+.list ul li a i{
+    margin-right: 20px;
+}
+.list{
+    margin-top: 15px;
+}
+.hover, .hover i{
+    color: #b3b3b3 !important;
+    transition: color ease 250ms, fill ease 250ms;
+    fill: #b3b3b3 !important;
+}
+
+.hover:hover, .hover:hover i{
+    color: #fff !important;
+    fill: #1ed760 !important;
+    transition: color ease 250ms, fill ease 250ms;
+}
+.links{
+    padding: 10px;
+    font-size: 2rem;
+    /* background-color: wheat; */
+    position: absolute;
+    bottom: 10px;
+}
+.links a{
+    margin-right: 15px;
+}
+.closeBtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.3rem;
+}
+.notVisible{
+    transform: translateX(-100%);
+    transition: transform ease-in-out 250ms;
+}
+
+
 
 /* normalScreen */
 
@@ -251,7 +328,7 @@ body{
         width: 195px;
     }
     .mainBox{
-        margin-left: 195px;
+        margin-left: 0px;
     }
     .loginForm{
         width: 60%;
@@ -274,16 +351,59 @@ body{
     #ending{
         right: -20%;
     }
-
+    .navContainer{
+        display: block;
+        width: 40%;
+    }
+    .icon{
+        display: block;
+    }
+    .sideNav{
+        display: none;
+    }
+    .arrow{
+        margin-left: 60px;
+    }
+    
 }
 
 /* smartphone */
 
 @media(min-width: 320px) and (max-width: 500px) {
-    .rightPart, .leftPart, .midPart{
+    .playerBarContainer{
         display: none !important;
     }
     /* #lyrics, #queue, #connection, #volume, .volSlider{
         display: none;
     } */
+    .navContainer{
+        display: block;
+        width: 80%;
+    }
+    .icon{
+        display: block;
+    }
+    .sideNav{
+        display: none;
+    }
+    .arrow{
+        margin-left: 60px;
+    }
+    .mainBox{
+        margin-left: 0px;
+    }
+    
+    .loginForm{
+        width: 90%;
+        z-index: 30000;
+    }
+    .card{
+        width: 10rem !important;
+    }
+    .card-text{
+        font-size: 11px !important;
+    }
+    .content{
+        padding: 10px !important;
+    }
 }
